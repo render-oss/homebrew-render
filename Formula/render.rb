@@ -3,6 +3,11 @@
 class Render < Formula
   # the tag of the current release
   RENDER_VERSION = "v0.1.2"
+
+  bottle do
+    root_url "https://github.com/render-oss/homebrew-render/releases/download/render-0.1.2"
+    sha256 cellar: :any_skip_relocation, monterey: "e679ae2b02c3620337fbb17875d543fd26548d0eaf5526b7a082556cc402ee5f"
+  end
   RENDER_REVISION = "a81b1b3b028440ff82950f36c80bdebaa3a49fe6"
 
   RENDER_VERSION_OUTPUT = "#{RENDER_VERSION}-#{RENDER_REVISION[0..6]}-homebrew"
