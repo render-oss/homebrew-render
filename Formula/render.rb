@@ -2,15 +2,13 @@
 
 class Render < Formula
   # the tag of the current release
-  RENDER_VERSION = "v0.1.2"
-  RENDER_REVISION = "a81b1b3b028440ff82950f36c80bdebaa3a49fe6"
+  RENDER_VERSION = "v0.1.3"
+  RENDER_REVISION = "8368e9ff0f40ef7e4e37c66488aa0ca1d7c82ea3"
 
   RENDER_VERSION_OUTPUT = [
     RENDER_VERSION,
     RENDER_REVISION[0..6],
     "homebrew",
-    `uname -s`.chomp.downcase,
-    `uname -m`.chomp.downcase,
   ].map(&:chomp).join("-").freeze
 
   desc "Launch your next project into the cloud"
