@@ -2,15 +2,14 @@
 
 class Render < Formula
   # the tag of the current release
-  RENDER_VERSION = "v0.1.2"
+  RENDER_VERSION = "v0.1.3"
+  RENDER_REVISION = "8368e9ff0f40ef7e4e37c66488aa0ca1d7c82ea3"
 
-  bottle do
-    root_url "https://github.com/render-oss/homebrew-render/releases/download/render-0.1.2"
-    sha256 cellar: :any_skip_relocation, monterey: "e679ae2b02c3620337fbb17875d543fd26548d0eaf5526b7a082556cc402ee5f"
-  end
-  RENDER_REVISION = "a81b1b3b028440ff82950f36c80bdebaa3a49fe6"
-
-  RENDER_VERSION_OUTPUT = "#{RENDER_VERSION}-#{RENDER_REVISION[0..6]}-homebrew"
+  RENDER_VERSION_OUTPUT = [
+    RENDER_VERSION,
+    RENDER_REVISION[0..6],
+    "homebrew",
+  ].map(&:chomp).join("-").freeze
 
   desc "Launch your next project into the cloud"
   homepage "https://render.com"
@@ -24,6 +23,11 @@ class Render < Formula
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
+
+  bottle do
+    root_url "https://github.com/render-oss/homebrew-render/releases/download/render-0.1.2"
+    sha256 cellar: :any_skip_relocation, monterey: "e679ae2b02c3620337fbb17875d543fd26548d0eaf5526b7a082556cc402ee5f"
   end
 
   depends_on "deno" => :build
