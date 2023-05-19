@@ -2,8 +2,8 @@
 
 class Render < Formula
   # the tag of the current release
-  RENDER_VERSION = "v0.1.6"
-  RENDER_REVISION = "c0de4b6a63e0486c188d7763416b292b1407c867"
+  RENDER_VERSION = "v0.1.7"
+  RENDER_REVISION = "859665245728a981b22ab0b5bce86f0e247eb02f"
 
   RENDER_VERSION_OUTPUT = [
     RENDER_VERSION,
