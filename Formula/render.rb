@@ -30,9 +30,7 @@ class Render < Formula
     sha256 cellar: :any_skip_relocation, monterey: "8fdec695c95c2acaf90da5cbd45ef6fbb166f4fde62dde227194806305fd160a"
   end
 
-  on_macos do
-    depends_on "deno" => :build
-  end
+  depends_on "deno" => :build
 
   def install
     # writes out a `-homebrew` version
