@@ -26,8 +26,8 @@ class Render < Formula
   end
 
   bottle do
-    root_url "https://github.com/render-oss/homebrew-render/releases/download/render-0.1.7"
-    sha256 cellar: :any_skip_relocation, monterey: "8fdec695c95c2acaf90da5cbd45ef6fbb166f4fde62dde227194806305fd160a"
+    root_url "https://github.com/render-oss/homebrew-render/releases/download/render-0.1.8"
+    sha256 cellar: :any_skip_relocation, monterey: "4ef5a4fcbeca6108ac4bf93b8bb91b5899886e3a9e380cb6317fad6df5351450"
   end
 
   on_macos do
