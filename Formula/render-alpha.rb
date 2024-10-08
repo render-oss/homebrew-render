@@ -9,7 +9,7 @@ class RenderAlpha < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", bin/"render", *std_go_args(ldflags: "-s -w")[1..-1]
+    system "go", "build", "-o", bin/"render", *std_go_args(ldflags: "-s -w")[1..]
   end
 
   test do
