@@ -1,10 +1,10 @@
 class RenderAlpha < Formula
   version = "0.6.0"
-  tag = "v#{version}"
+  tag     = "v#{version}"
   desc "Command-line interface for Render (Alpha version)"
   homepage "https://github.com/render-oss/render-cli-alpha"
   url "https://github.com/render-oss/render-cli-alpha.git",
-      tag: tag,
+      tag:      tag,
       revision: "99d89d88172648036c7ab094387da40801e6ee57"
   license "Apache-2.0"
   depends_on "go" => :build
