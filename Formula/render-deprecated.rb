@@ -45,7 +45,7 @@ class RenderDeprecated < Formula
     # implies build-local
     system "make", "build-completions"
 
-    bin.install "./bin/render-deprecated"
+    bin.install "./bin/render"
 
     bash_completion.install "./share/bash/bash_completion.d/render.bash"
     zsh_completion.install "./share/zsh/site-functions/render.zsh"
@@ -53,6 +53,6 @@ class RenderDeprecated < Formula
   end
 
   test do
-    assert_match RENDER_VERSION_OUTPUT, shell_output("#{bin}/render-deprecated version")
+    assert_match RENDER_VERSION_OUTPUT, shell_output("#{bin}/render version")
   end
 end
