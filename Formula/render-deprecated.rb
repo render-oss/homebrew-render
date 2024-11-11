@@ -2,10 +2,8 @@
 
 class RenderDeprecated < Formula
   # the tag of the current release
-  RENDER_VERSION = "v0.1.11"
+  RENDER_VERSION  = "v0.1.11"
   RENDER_REVISION = "3b0f049d839b2ad9804253f324034eeff58daefa"
-
-  deprecate! date: "2024-11-11", because: "New CLI available at https://github.com/render-oss/cli"
 
   RENDER_VERSION_OUTPUT = [
     RENDER_VERSION,
@@ -31,6 +29,8 @@ class RenderDeprecated < Formula
     root_url "https://github.com/render-oss/homebrew-render/releases/download/render-0.1.11"
     sha256 cellar: :any_skip_relocation, monterey: "62e41c8c43d5aa26f7f1376199a3c9eba4bce0fc81bbe40adc1ab09f0b18ec52"
   end
+
+  deprecate! date: "2024-11-11", because: "New CLI available at https://github.com/render-oss/cli"
 
   on_macos do
     depends_on "deno" => :build
