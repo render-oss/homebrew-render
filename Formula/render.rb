@@ -1,11 +1,11 @@
 class Render < Formula
-  version = "0.8.2"
+  version = "0.8.3"
   tag     = "v#{version}"
   desc "Command-line interface for Render (Beta version)"
   homepage "https://github.com/render-oss/cli"
   url "https://github.com/render-oss/cli.git",
       tag:      tag,
-      revision: "e2e9751d01457d88aa276f8b9b3614fc945dc78c"
+      revision: "00b0eacafabca18bad39d52831d618c2c34b4703"
   license "Apache-2.0"
   depends_on "go" => :build
 
