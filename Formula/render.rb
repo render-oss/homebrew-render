@@ -14,6 +14,7 @@ class Render < Formula
   end
 
   test do
-    assert_match "Usage:", shell_output("#{bin}/render-alpha --help")
+    assert_match "Usage:", shell_output("#{bin}/render --help")
+    assert_match "render version" + version, shell_output("#{bin}/render --version")
   end
 end
