@@ -10,7 +10,7 @@ class Render < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w -X 'github.com/renderinc/render-cli/pkg/cfg.Version=#{version}'")[1..]
+    system "go", "build", *std_go_args(ldflags: "-s -w -X 'github.com/renderinc/cli/pkg/cfg.Version=#{version}'")[1..]
   end
 
   test do
