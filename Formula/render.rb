@@ -1,7 +1,7 @@
 class Render < Formula
   version = "0.8.7"
   tag     = "v#{version}"
-  desc "Command-line interface for Render (Beta version)"
+  desc "Command-line interface for Render"
   homepage "https://github.com/render-oss/cli"
   url "https://github.com/render-oss/cli.git",
       tag:      tag,
