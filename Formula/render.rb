@@ -16,7 +16,7 @@ class Render < Formula
   def install
     ldflags = %W[
       -s -w
-      -X github.com/renderinc/cli/pkg/cfg.Version=#{version}
+      -X github.com/render-oss/cli/pkg/cfg.Version=#{version}
     ]
     system "go", "build", *std_go_args(ldflags: ldflags)
   end
